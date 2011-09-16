@@ -41,6 +41,11 @@ ARRAY
 9. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
 	"a" + [{a:2}, {a:3}, {a:1}]
 	--> [{a:1}, {a:2}, {a:3}].
+(array.reverse)
+*/
+	var reverseNum = [{a:2}, {a:3}, {a:1}]
+	console.log(reverseNum.reverse());
+	
 	
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
@@ -52,3 +57,4 @@ ARRAY
 
 /*STRING
 12. Given a string that is a list of things separated by a given string, as well as another string separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
+*/
