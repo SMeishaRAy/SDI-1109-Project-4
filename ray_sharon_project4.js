@@ -36,7 +36,11 @@ ARRAY
 /*NUMBER
 8. Find the number of hours or days difference between two dates.
 */
-
+	var date1 = new Date(2011, 8, 16);
+	var date2 = new Date(2009, 8, 16);
+		if(date1.getTime() - date2.getTime());
+	console.log(date1 - date2);
+	
 /*ARRAY
 9. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
 	"a" + [{a:2}, {a:3}, {a:1}]
@@ -45,6 +49,9 @@ ARRAY
 */
 	var reverseNum = [{a:2}, {a:3}, {a:1}]
 	console.log(reverseNum.reverse());
+	
+	var reverseName = [{a:"Angela"}, {b:"Marco"}, {c:"Tommy"}, {d:"Michelle"}]
+	console.log(reverseName.reverse());
 	
 	
 /*STRING
