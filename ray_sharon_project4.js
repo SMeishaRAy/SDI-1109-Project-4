@@ -50,8 +50,13 @@ ARRAY
 	--> [{a:1}, {a:2}, {a:3}].
 (array.reverse)
 */
-		var reverseNum = [{a:2}, {a:3}, {a:1}]
-		console.log(reverseNum.reverse());
+				
+		function sortNumber(b,a){
+			return a - b;
+		}
+			var num = [{a:2}, {a:3}, {a:1}];
+		console.log(num.reverse);
+		
 	
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
