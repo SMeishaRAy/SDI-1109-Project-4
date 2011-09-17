@@ -36,23 +36,22 @@ ARRAY
 /*NUMBER
 8. Find the number of hours or days difference between two dates.
 */
-	var date1 = new Date(2011, 8, 16);
-	var date2 = new Date(2009, 8, 16);
-		if(date1.getTime() - date2.getTime());
-	console.log(date1 - date2);
-	
+//prints out the difference of days between two dates.
+		var date1 = new Date(2011, 8, 16); //new Date(yyyy,mm,dd)
+        var date2 = new Date(2009, 8, 16);
+        var msDif = date1.getTime() - date2.getTime(); // difference in milliseconds
+        var msDay = 1000 * 60 * 60 * 24 // milliseconds in one day
+        var diffDays = Math.ceil(msDif / msDay);  // difference in days
+        	console.log("The difference between the two dates is " + diffDays + " days.");	
+		 		 	
 /*ARRAY
 9. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
 	"a" + [{a:2}, {a:3}, {a:1}]
 	--> [{a:1}, {a:2}, {a:3}].
 (array.reverse)
 */
-	var reverseNum = [{a:2}, {a:3}, {a:1}]
-	console.log(reverseNum.reverse());
-	
-	var reverseName = [{a:"Angela"}, {b:"Marco"}, {c:"Tommy"}, {d:"Michelle"}]
-	console.log(reverseName.reverse());
-	
+		var reverseNum = [{a:2}, {a:3}, {a:1}]
+		console.log(reverseNum.reverse());
 	
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
