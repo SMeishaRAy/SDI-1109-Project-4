@@ -36,13 +36,13 @@ ARRAY
 /*NUMBER
 8. Find the number of hours or days difference between two dates.
 */
-//prints out the difference of days between two dates.
-		var date1 = new Date(2011, 8, 16); //new Date(yyyy,mm,dd)
-        var date2 = new Date(2009, 8, 16);
+	//How many days from the day you were born?
+		var date1 = new Date(2011, 8, 16); //new Date
+        var date2 = new Date(1979, 2, 10);
         var msDif = date1.getTime() - date2.getTime(); // difference in milliseconds
         var msDay = 1000 * 60 * 60 * 24 // milliseconds in one day
-        var diffDays = Math.ceil(msDif / msDay);  // difference in days
-        	console.log("The difference between the two dates is " + diffDays + " days.");	
+        var differentDays = Math.ceil(msDif / msDay);  // difference in days
+        	console.log("The difference between September 16, 2011 and the day I was born is " + differentDays + " days.");	
 		 		 	
 /*ARRAY
 9. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
