@@ -6,16 +6,20 @@
 STRING
 1. Does a string follow a 123-456-7890 pattern like a phone number?
 */
-
+		var myString = 123-456-7890;
+		console.log(myString.substring(0,10));
 /*
 NUMBER
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
 */
+	
+
 
 /*
 ARRAY
 3. Find the smallest value in an array that is greater than a given number.
 */
+	console.log(Math.min(8990,5,12,3));
 
 /*STRING
 4. Does a string follow an aaa@bbb.ccc pattern like an email address?
@@ -50,14 +54,13 @@ ARRAY
 	--> [{a:1}, {a:2}, {a:3}].
 (array.reverse)
 */
-				
-		function sortNumber(b,a){
-			return a - b;
-		}
-			var num = [{a:2}, {a:3}, {a:1}];
-		console.log(num.reverse);
-		
-	
+							//CANNOT GET THIS ONE//
+			var aNum = [{a:2}, {a:3}, {a:1}];
+			for(key in aNum){
+			console.log(aNum);
+			}
+			
+			
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
 */
