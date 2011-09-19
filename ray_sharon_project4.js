@@ -18,7 +18,8 @@ NUMBER
 ARRAY
 3. Find the smallest value in an array that is greater than a given number.
 */
-	console.log(Math.min(8990,5,12,3));
+	
+	console.log(Math.min(785, 8945, 91, 8, 564));
 
 /*STRING
 4. Does a string follow an aaa@bbb.ccc pattern like an email address?
@@ -54,10 +55,9 @@ ARRAY
 	--> [{a:1}, {a:2}, {a:3}].
 (array.reverse) & (array.sort)
 
-			//Prints out a:1, a:3, a:2 in order of a:1, a:2, a:3, or a:3, a:2, a:1*/
-			var aNum = ["a:2", "a:3", "a:1"];
-			console.log(aNum.sort());
-			console.log(aNum.reverse());	
+			 or a:3, a:2, a:1*/
+			var aNum = ["a:2", "a:3", "a:1"]
+			console.log(aNum.sort());/*Prints out a:1, a:3, a:2 in order of a:1, a:2, a:3*/			console.log(aNum.reverse());/*Prints out in reverse*/	
 			
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
@@ -75,3 +75,12 @@ ARRAY
 /*STRING
 12. Given a string that is a list of things separated by a given string, as well as another string separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
 */
+
+	var string = "a,b,c";
+	console.log(string.replace("/"));
+
+
+
+
+
+
