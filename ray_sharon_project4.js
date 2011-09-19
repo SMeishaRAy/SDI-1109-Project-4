@@ -64,20 +64,25 @@ ARRAY
 */
 //Style-String//
 
+	
+	
 	var word = "javascript rules!";
 		console.log(word.toLowerCase());
-	console.log(word.toUpperCase());
+		console.log(word.toUpperCase());
 
 /*NUMBER
 11. Given a string version of a number such as "42", return the values as an actual Number, such as 42.
 */
 
+	var string = "42";
+	console.log(string.valueOf());
+
 /*STRING
 12. Given a string that is a list of things separated by a given string, as well as another string separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
 */
-
-	var string = "a,b,c";
-	console.log(string.replace("/"));
+	var string1="a,b,c",
+		string2="a/b/c"
+	console.log(string2.replace());
 
 
 
