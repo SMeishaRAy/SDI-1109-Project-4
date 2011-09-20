@@ -10,16 +10,16 @@
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
 		I tried both syntaxes here (.toFixed & .toPrecision).
 */
-	var money = 2.1
-	console.log(money.toFixed(2)); //.toFixed
+	var money = 2.1;
+	console.log(money.toFixed(2)); //.toFixed - moves the decimal (2) places.
 	
-	var money = 2.1
-	console.log(money.toPrecision(3)); //.toPrecision
+	/*var money = 2.1
+	console.log(money.toPrecision(3));*/ //.toPrecision
 	
 /*ARRAY
 3. Find the smallest value in an array that is greater than a given number.
 */
-
+		
 
 /*STRING
 4. Does a string follow an aaa@bbb.ccc pattern like an email address?
@@ -32,8 +32,7 @@
 /*ARRAY
 6. Find the total value of just the numbers in an array, even if some of the items are not numbers.
 */
-
-	
+			
 	
 /*STRING
 7. Is the string a URL? (Does it start with http: or https:?)
@@ -55,13 +54,19 @@
 9. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
 	"a" + [{a:2}, {a:3}, {a:1}]
 	--> [{a:1}, {a:2}, {a:3}].
-(array.reverse) & (array.sort)
-
-			 or a:3, a:2, a:1*/
-			var aNum = ["a:2", "a:3", "a:1"]
-			console.log(aNum.sort());/*Prints out a:1, a:3, a:2 in order of a:1, a:2, a:3*/			
-			console.log(aNum.reverse());/*Prints out in reverse*/	
-			
+	(array.sort)*/
+			 
+			 
+			var aNum = [
+				 {a:2},
+				 {a:3}, 
+				 {a:1},
+			]
+			aNum.sort(function(a,b){
+			return a.a-b.a;
+			})
+			console.log(aNum);
+						
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
 */
@@ -77,15 +82,28 @@
 /*NUMBER
 11. Given a string version of a number such as "42", return the values as an actual Number, such as 42.
 */
-	var string = "42";
-	console.log(string.valueOf());
+	var myNum = "42",
+		number = function(){
+			aNum = parseInt(myNum);
+		return myNum;
+		}
+	console.log("My number is " + number());
+	
+	/*This one is another way of getting the same number
+	var myNum = "42";
+	console.log("My Number is " + myNum.valueOf());*/
 
 /*STRING
 12. Given a string that is a list of things separated by a given string, as well as another string separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
 */
-	var string1="a,b,c",
-		string2="a/b/c"
-	console.log(string2.replace());
+		
+	
+	/*var string = function(){
+		string1="a,b,c",
+		string2="a/b/c",
+		return (st);
+	}	
+	console.log();*/
 
 
 
