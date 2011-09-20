@@ -2,13 +2,11 @@
 //SDI 1109 Project 4
 //Code Library!
 
-/*
-STRING
+/*STRING
 1. Does a string follow a 123-456-7890 pattern like a phone number?
 */
 		
-/*
-NUMBER
+/*NUMBER
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
 */
 	var money = 2.1
@@ -17,11 +15,11 @@ NUMBER
 	var money = 2.1
 	console.log(money.toPrecision(3)); //.toPrecision
 	
-/*
-ARRAY
+/*ARRAY
 3. Find the smallest value in an array that is greater than a given number.
 */
-	
+	var numbers = [785, 8945, 91, 8, 564]
+		
 	console.log(Math.min(785, 8945, 91, 8, 564));
 
 /*STRING
@@ -36,6 +34,8 @@ ARRAY
 6. Find the total value of just the numbers in an array, even if some of the items are not numbers.
 */
 
+	
+	
 /*STRING
 7. Is the string a URL? (Does it start with http: or https:?)
 */
