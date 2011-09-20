@@ -11,9 +11,12 @@ STRING
 NUMBER
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
 */
+	var money = 2.1
+	console.log(money.toFixed(2)); //.toFixed
 	
-
-
+	var money = 2.1
+	console.log(money.toPrecision(3)); //.toPrecision
+	
 /*
 ARRAY
 3. Find the smallest value in an array that is greater than a given number.
@@ -57,23 +60,24 @@ ARRAY
 
 			 or a:3, a:2, a:1*/
 			var aNum = ["a:2", "a:3", "a:1"]
-			console.log(aNum.sort());/*Prints out a:1, a:3, a:2 in order of a:1, a:2, a:3*/			console.log(aNum.reverse());/*Prints out in reverse*/	
+			console.log(aNum.sort());/*Prints out a:1, a:3, a:2 in order of a:1, a:2, a:3*/			
+			console.log(aNum.reverse());/*Prints out in reverse*/	
 			
 /*STRING
 10. Title-case a string (split into words, then uppercase the first letter of each word).
 */
 //Style-String//
 
+	var words = "title case full sail rules!";
+	words = words.toLowerCase().replace(/\b[a-z]/g, //regular expression 
+	function(letter) {
+    return letter.toUpperCase();
+	});
+	console.log(words); //Displays "Full Sail Rules!"
 	
-	
-	var word = "javascript rules!";
-		console.log(word.toLowerCase());
-		console.log(word.toUpperCase());
-
 /*NUMBER
 11. Given a string version of a number such as "42", return the values as an actual Number, such as 42.
 */
-
 	var string = "42";
 	console.log(string.valueOf());
 
