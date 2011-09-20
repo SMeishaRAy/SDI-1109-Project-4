@@ -5,7 +5,20 @@
 /*STRING
 1. Does a string follow a 123-456-7890 pattern like a phone number?
 */
-		
+		function checkNum(phone){
+		var number = /^(\d{3})[-](\d{3})[-](\d{4})$/;
+			if(!phone.match(number)){
+				console.log("Your number is not valid.");
+				return false;
+				}else { 
+					if (phone.match(number)) {
+					console.log("Your phone number is valid.");
+				return true;
+				}
+				}
+				};
+				checkNum("123-956-7890");
+				
 /*NUMBER
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
 		I tried both syntaxes here (.toFixed & .toPrecision).
@@ -56,7 +69,6 @@
 	--> [{a:1}, {a:2}, {a:3}].
 	(array.sort)*/
 			 
-			 
 			var aNum = [
 				 {a:2},
 				 {a:3}, 
@@ -96,17 +108,7 @@
 /*STRING
 12. Given a string that is a list of things separated by a given string, as well as another string separator changed to the second: "a,b,c" + "," + "/" --> "a/b/c".
 */
-		
 	
-	/*var string = function(){
-		string1="a,b,c",
-		string2="a/b/c",
-		return (st);
-	}	
-	console.log();*/
-
-
-
 
 
 
