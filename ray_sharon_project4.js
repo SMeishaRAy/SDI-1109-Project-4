@@ -8,6 +8,7 @@
 		
 /*NUMBER
 2. Format a number to use a specific number for decimal places as for money: 2.1 --> 2.10. 
+		I tried both syntaxes here (.toFixed & .toPrecision).
 */
 	var money = 2.1
 	console.log(money.toFixed(2)); //.toFixed
@@ -18,9 +19,7 @@
 /*ARRAY
 3. Find the smallest value in an array that is greater than a given number.
 */
-	var numbers = [785, 8945, 91, 8, 564]
-		
-	console.log(Math.min(785, 8945, 91, 8, 564));
+
 
 /*STRING
 4. Does a string follow an aaa@bbb.ccc pattern like an email address?
@@ -73,7 +72,7 @@
 	function(letter) {
     return letter.toUpperCase();
 	});
-	console.log(words); //Displays "Full Sail Rules!"
+	console.log(words); //Displays "Title Case Full Sail Rules!"
 	
 /*NUMBER
 11. Given a string version of a number such as "42", return the values as an actual Number, such as 42.
