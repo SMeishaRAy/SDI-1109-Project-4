@@ -7,7 +7,7 @@
 1. Does a string follow a 123-456-7890 pattern like a phone number?
 */
 		function checkNum(phone){
-		var number = /^(\d{3})[-](\d{3})[-](\d{4})$/; // verifies the format matches.
+		var number = /^(\d{3})[-](\d{3})[-](\d{4})$/; // regEx verifies the format matches.
 			if(!phone.match(number)){
 				console.log("Your phone number is not valid."); //if it doesn't match, it will print false.
 				return false;
@@ -25,7 +25,7 @@
 */
 		function checkUrl(url){
 		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
-		// verifies the if the string is a http: or https:
+		// regEx verifies the if the string is a http: or https:
 			if(url.match(sites)){
 				goodUrl = "Your url is valid."; //if it does not have http: or https: in the url, it will print false.
 				return goodUrl;
