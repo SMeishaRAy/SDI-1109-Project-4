@@ -24,20 +24,18 @@
 2. Is the string a URL? (Does it start with http: or https:?)
 */
 		function checkUrl(url){
-		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/ 
+		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
 		// verifies the if the string is a http: or https:
-			if(!url.match(sites)){
-				console.log("Your url is not valid."); //if it does not have http: or https: in the url, it will print false.
-				return false;
+			if(url.match(sites)){
+				goodUrl = "Your url is valid."; //if it does not have http: or https: in the url, it will print false.
+				return goodUrl;
 				}else { 
-					if (url.match(sites)) {
-					console.log("Your url is valid.");//if it does have http: or https: in the url, it prints true.
-				return true;
+					badUrl = "Your url is not valid.";//if it does have http: or https: in the url, it prints true.
+				return badUrl;
 				}
-				}
-				};
-				
-				checkUrl("http:", "https:");	
+			};
+				var validUrl = checkUrl("https://www.facebook.com");	
+					console.log(validUrl);	
 	
  
 /*NUMBER
