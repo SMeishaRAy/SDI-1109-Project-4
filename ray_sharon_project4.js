@@ -39,17 +39,16 @@
 				
 				checkUrl("http:", "https:");	
 	
+ 
 /*NUMBER
-3. Find the number of hours or days difference between two dates.
+3. Format a number to use a specific number of decimal places as for money: 2.1--->2.10.
 */
-	//How many days from the day you were born?
-		var date1 = new Date(2011, 8, 19); //new Date
-        var date2 = new Date(1979, 2, 10);
-        var msDif = date1.getTime() - date2.getTime(); // difference in milliseconds
-        var msDay = 1000 * 60 * 60 * 24 // milliseconds in one day
-        var differentDays = Math.ceil(msDif / msDay);  // difference in days
-        	console.log("The difference between September 19, 2011 and the day I was born is " + differentDays + " days.");	
-		 		 	
+			function amount(total){
+				var myCost = total.toFixed(2);
+				return myCost;
+				};
+			console.log(amount(2.1));
+				 		 	
 /*ARRAY
 4. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
 	"a" + [{a:2}, {a:3}, {a:1}]
