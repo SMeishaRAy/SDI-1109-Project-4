@@ -66,7 +66,6 @@
 /*STRING
 5. Title-case a string (split into words, then uppercase the first letter of each word).
 */
-//Style-String//
 
 	var words = "title case full sail rules!";
 	words = words.toLowerCase().replace(/\b[a-z]/g, //regular expression 
