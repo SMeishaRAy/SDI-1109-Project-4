@@ -45,7 +45,7 @@
 				var myCost = total.toFixed(2);
 				return myCost;
 				};
-			console.log(amount(2.1));
+			console.log("$" + amount(2.1));
 				 		 	
 /*ARRAY
 4. Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
