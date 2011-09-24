@@ -27,10 +27,10 @@
 		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
 		// regEx verifies the if the string is a http: or https:
 			if(url.match(sites)){
-				goodUrl = "Your url is valid."; //if it does not have http: or https: in the url, it will print false.
+				goodUrl = "Your url is valid."; //if it does have http: or https: in the url, it will print true.
 				return goodUrl;
 				}else { 
-					badUrl = "Your url is not valid.";//if it does have http: or https: in the url, it prints true.
+					badUrl = "Your url is not valid.";//if it doesn't have http: or https: in the url, it prints false.
 				return badUrl;
 				}
 			};
@@ -83,6 +83,23 @@
 		return myNum;
 		}
 	console.log("My number is " + number());
+	
+/*STRING	
+7. Does a string follow an aaa@bbb.ccc pattern like an email address?
+*/
+	function validateEmail(address){
+		var email = 
+			if(address.indexOf("@")){
+				addressGood = "Valid Email."; //if email is valid, prints out valid email
+				return addressGood;
+				}else{
+					addressBad = "Invalid Email."; //if email is invalid, prints out invalid email
+					return addressBad;
+					}
+				};
+					var validEmail = validateEmail("");
+						console.log(vailidEmail);
+	
 	
 	
 
