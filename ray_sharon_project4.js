@@ -98,7 +98,7 @@
 					}
 				};
 					var validEmail = validateEmail("");
-						console.log(vailidEmail);
+						console.log(vailidEmail); 
 	
 	
 	
